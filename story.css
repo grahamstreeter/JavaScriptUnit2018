@@ -1,0 +1,19 @@
+div{
+  display:none;
+  font-family:cursive;
+  font-size:18pt;
+}
+
+a:hover{
+  font-variant: small-caps;
+  color:green;
+}
+
+#inv_box{
+  display:flex;
+  color:white;
+  background:black;
+  position:fixed;
+  bottom:50px;
+  right:50px;
+}
