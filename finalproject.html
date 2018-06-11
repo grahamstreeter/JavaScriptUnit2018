@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='finalproject.css'>
+  <meta charset='utf-8'>
+  <title>Calculator</title>
+  <h1>Calculator</h1>
+</head>
+
+<body>
+  <form id = 'calculator'>
+    <table>
+      <tr>
+        <td colspan='4'><input type='text' name='display' id='display' disabled></td>
+      </tr>
+      <tr>
+        <td><input type='button' name='7' value='7' onclick="calculator.display.value += '7'"></td>
+        <td><input type='button' name='8' value='8' onclick="calculator.display.value += '8'"></td>
+        <td><input type='button' name='9' value='9' onclick="calculator.display.value += '9'"></td>
+        <td><input type='button' class='operator' value='/' onclick="calculator.display.value += '/'"></td>
+      </tr>
+      <tr>
+        <td><input type='button' name='4' value='4' onclick="calculator.display.value += '4'"></td>
+        <td><input type='button' name='5' value='5' onclick="calculator.display.value += '5'"></td>
+        <td><input type='button' name='6' value='6' onclick="calculator.display.value += '6'"></td>
+        <td><input type='button' class='operator' value='*' onclick="calculator.display.value += '*'"></td>
+      </tr>
+      <tr>
+        <td><input type='button' name='1' value='1' onclick="calculator.display.value += '1'"></td>
+        <td><input type='button' name='2' value='2' onclick="calculator.display.value += '2'"></td>
+        <td><input type='button' name='3' value='3' onclick="calculator.display.value += '3'"></td>
+        <td><input type='button' class='operator' value='-' onclick="calculator.display.value += '-'"></td>
+      </tr>
+      <tr>
+        <td><input type='button' name='0' value='0' onclick="calculator.display.value += '0'"></td>
+        <td><input type='button' name='=' value='=' onclick='calculator.display.value = eval(calculator.display.value)'></td>
+        <td><input type='button' name='AC' value='AC' onclick="calculator.display.value = ''"></td>
+        <td><input type='button' class='operator' value='+' onclick="calculator.display.value += '+'"></td>
+      </tr>
+    </table>
+  </form>
+
+  <button id='saveCalc'>Save calculation</button>
+  <button id='showSaved'>Show saved calculation</button>
+  <button id='showCanv'>MB1</button>
+  <button id='showArray'>MB2</button>
+  <br><br>
+
+  <div id='calc_box'></div>
+  <br>
+
+  <canvas id='myCanvas' width='300' height='400' style='border:1px solid black;'>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBf9X176CKq0s3eMXLuxsmYJFI0FBhPZ6A",
+          authDomain: "final-project-7e57e.firebaseapp.com",
+          databaseURL: "https://final-project-7e57e.firebaseio.com",
+          projectId: "final-project-7e57e",
+          storageBucket: "",
+          messagingSenderId: "150098930808"
+        };
+      firebase.initializeApp(config);
+    </script>
+  <script src='finalproject.js'></script>
+  </body>
+</html>

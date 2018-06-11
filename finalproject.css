@@ -1,0 +1,20 @@
+button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 4px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+input {
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+div {
+  font-size: 16px;
+}
